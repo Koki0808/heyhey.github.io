@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>フィットネス</title>
+    <link rel="stylesheet" href="css/muscle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8a8189d6fd.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-logo">
+            <a href="index.html">MyBlog</a>
+        </div>
+    </header>
+
+    <!--   🍔メニュー　-->
+    <div class="nav-berger">
+        <span></span><span></span><span></span><span>Menu</span>
+    </div>
+
+    <!--  具材　-->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home" style="margin-right: 10px;"></i>Home</a></li>
+            <li><a href="programing.html"><i class="fas fa-laptop-code" style="margin-right: 10px;"></i>Programing</a></li>
+            <li><a href="book.html"><i class="fas fa-book" style="margin-right: 10px;"></i>Book</a></li>
+            <li><a href="muscle.html"><i class="fas fa-dumbbell" style="margin-right: 10px;"></i>Muscle</a></li>
+        </ul>
+    </nav>
+
+    <!--メイン＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝-->
+    <main>
+
+        <div class="section-title">
+            <h2>筋トレ</h2>
+        </div>
+        
+        <div class="container">
+
+            <section>
+                <div class="content-img">
+                    <img src="img/muscle.jpg">
+                </div>
+                
+                <div class="content-width">
+                <div class="title">
+                    正しい筋トレとは
+                </div>
+                <p>腕立て！腹筋！スクワット！腕立て！腹筋！スクワット！腕立て！腹筋！スクワット！腕立て！腹筋！スクワット！</p>
+
+                <div class="btn">
+                    <a href="#">READ MORE</a>
+                </div>
+                </div>
+
+            </section>
+
+
+
+
+            <section>
+                <div class="content-img">
+                    <img src="img/m2.jpg">
+                </div>
+                <div class="content-width">
+                <div class="title">
+                    エクササイズ
+                </div>
+                <p>フォーフォーフォーフォーフォーフォーフォーフォーフォーフォーフォーフォーフォー</p>
+
+                <div class="btn">
+                    <a href="#">READ MORE</a>
+                </div>
+                </div>
+            </section>
+
+
+            <section>
+                <div class="content-img">
+                    <img src="img/macho.jpg">
+                </div>
+                
+                <div class="content-width">
+                <div class="title">
+                    腕トレ
+                </div>
+                <p>プロテイン最高プロテイン最高プロテイン最高プロテイン最高プロテイン最高プロテイン最高</p>
+                <div class="btn">
+                    <a href="#">READ MORE</a>
+                </div>
+                </div>
+
+
+            </section>
+        </div>
+
+
+        <section>
+            <div class="sns">SNS</div>
+            <div class="awsome">
+                <a href="#"><i class="fab fa-instagram fa-2x my-color"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x my-color1"></i></a>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        (c)2020/greatyears///
+    </footer>
+
+
+<!--ハンバーガー調理-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('.nav-berger').click(function() {
+                $(this).toggleClass('active');
+
+                if ($(this).hasClass('active')) {
+                    $('.menu').addClass('active');
+                } else {
+                    $('.menu').removeClass('active');
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
